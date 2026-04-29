@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/Samarth1080p/devvlab.git'
+                git branch: 'main', url: 'https://github.com/Samarth1080p/devvlab.git'
             }
         }
 
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo "Deploying..."
+                echo "Deploy success"
             }
         }
     }
